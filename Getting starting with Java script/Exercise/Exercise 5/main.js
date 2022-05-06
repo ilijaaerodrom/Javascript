@@ -1,12 +1,12 @@
 
 
 
-
-let name = "Ilija";
+let text = "Hello,";
+let name = "Ilija,";
 let age = "35";
-console.log("My name is " + name + " My age is " + age + " years old");
-
-
 let bool = true;
-console.log
+
+console.log(text + " My name is " + name + " I am " + age + " years old and I can code JavaScript: " + bool );
+
+
 

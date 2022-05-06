@@ -1,16 +1,19 @@
 
 
-let nrToStr = 'Laurence';
-console.log(nrToStr, typeof (nrToStr));
 
-let strToNr = "Svekis";
-console.log(strToNr, typeof (strToNr));
 
-let unassingned = "undefined";
-console.log(typeof (undefined));
 
-let null = null;
-console.log("null", typeof (nullToNr));
+let str1 = 'Laurence';
+console.log(str1, typeof (str1));
+
+let str2 = "Svekis";
+console.log(str2, typeof (str2));
+
+let unassigned;
+console.log(unassigned);
+
+let unknown = null;
+console.log(null);
 
 let myNum = 1000;
-console.log(strToNr, typeof (myNum));
+console.log(myNum, typeof (myNum));
