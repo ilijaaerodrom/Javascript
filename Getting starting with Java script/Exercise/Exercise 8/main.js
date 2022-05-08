@@ -2,8 +2,5 @@
 
 let a = 3;
 let b = 4;
-let c = 5;
-
-console.log(a += b);
-console.log(a /= c);
-console.log(c %= b);
+result = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+console.log(result);
