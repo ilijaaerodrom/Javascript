@@ -207,17 +207,12 @@ console.log(theList);
 
 
 
-
-
-
-
-
 // Self - Check Quiz
 const myArr1 = [1,3,5,6,8,9,15];
-console.log(myArr1);
-myArr1[1] = 4;
-console.log(myArr1);
 console.log(myArr1.indexOf(0));
 console.log(myArr1.indexOf(3));
 
+const index1 = myArr1.indexOf(`1`);
+myArr1[index1] = `4`;
+console.log(myArr1);
 
