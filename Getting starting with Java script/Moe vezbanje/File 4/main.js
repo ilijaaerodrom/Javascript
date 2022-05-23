@@ -1,11 +1,15 @@
-// Logic statements
-/* - if and if else 
+
+
+/* Logic statements
+   - if and if else 
    - else if
    - conditional ternary operators
    - switch */
+
+
 // if and if else
 
-/*let rain = true;
+let rain = true;
 if (rain) {
   console.log(`Taking my umbrela outside`);
 } else {
@@ -25,6 +29,7 @@ if (hobby === `dancing`) {
 } else {
   console.log(`Can you teach that`);
 }
+
 // vezba
 let myName = true;
 console.log(myName);
@@ -73,14 +78,13 @@ if (properAge >= 21) {
 }
 console.log(message);
 
-/* Conditional Ternary Operators
+ /*Conditional Ternary Operators
  It has three operands- operand1 ? operand2 : operand3;
  operand1 is the expression that is to be evaluated.
  If the value of the expression is true, operand2 gets
  executed, If the value of the expression is false,
- operator3 gets executed.
+ operator3 gets executed. */
  
-
 let age = 20;
 let message = age < 18 ? `denied` : `allowed`;
 console.log(message); 
@@ -147,7 +151,7 @@ switch (randomNumber) {
     break;
 }
 console.log(userInput);
-console.log(message); */
+console.log(message); 
 
 // Vezba
 let prize = prompt(`Insert a number between 0 and 10`);
