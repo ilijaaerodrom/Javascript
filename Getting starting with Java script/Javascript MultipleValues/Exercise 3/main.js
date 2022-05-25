@@ -29,3 +29,4 @@ console.log(typeof arrDog);
 console.log(`My dog name is ${dog.name}.. He weights ${dog.weight}`);
 dog.name = `Jecky`;
 console.log(`My dog name is ${dog.name}..He weights ${dog.weight}`);
+
