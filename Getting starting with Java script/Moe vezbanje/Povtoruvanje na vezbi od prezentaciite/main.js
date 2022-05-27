@@ -1,6 +1,7 @@
 
 
 // Chapter 1: Getting started with Javascript
+
 // Exercise 1.1
 console.log(4 + 10);
 console.log(`Ilija Trajkovski`);
