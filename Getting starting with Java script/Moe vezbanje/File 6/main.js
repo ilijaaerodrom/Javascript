@@ -15,6 +15,14 @@ varContainigFunction();
 
 // Vezba
 
+function twoParamaters(name, lastName) {
+
+  console.log(`My name is ` + name + ` and my lastname is ` + lastName);
+}
+twoParamaters(`Ilija`, `Trajkovski`);
+
+// Vezba
+
 let descArr = [`Strong`, `Smart`, `Fast`, `Beautiful`];
 function nameDescription() {
   let name = prompt(`What's your name?`);
