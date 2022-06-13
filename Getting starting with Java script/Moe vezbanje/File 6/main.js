@@ -15,11 +15,15 @@ varContainigFunction();
 
 // Vezba
 
-function twoParamaters(name, lastName) {
+let number1 = 21;
+let number2 = 10;
 
-  console.log(`My name is ` + name + ` and my lastname is ` + lastName);
+function addNumbers(num1, num2) {
+  console.log(num1 + num2);
 }
-twoParamaters(`Ilija`, `Trajkovski`);
+
+addNumbers(number1, number2);
+addNumbers(20, 67);
 
 // Vezba
 
