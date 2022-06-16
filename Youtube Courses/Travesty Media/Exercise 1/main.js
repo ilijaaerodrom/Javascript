@@ -49,6 +49,7 @@ const person = {
 person.email = `jonhdoe@gmail.com`;
 console.log(person);
 
+
 const todos = [     // Array with three objects
   {
     id: 1,
@@ -66,6 +67,16 @@ const todos = [     // Array with three objects
     isCompleted: false
   },
 ];
-console.log(todos[1].text);
 
-//For
+// forEach, map, filter
+
+todos.forEach(function (todo) {
+  console.log(todo.text);
+}
+
+
+
+
+
+
+
