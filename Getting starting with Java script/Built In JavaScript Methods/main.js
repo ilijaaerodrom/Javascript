@@ -179,7 +179,22 @@ let now = new Date();
 
 console.log(`Day of the week:`, now.getDay);
 
+// Vezba
 
+// 8.7
+
+let myDate = new Date();
+
+let monthArray = [`January`, `February`, `March`, `April`,
+  `May`, `June`, `July`, `Avgust`, `September`, `Oktomber`,
+  `November`, `December`];
+let dayOfWeekArray = [`Mon`, `Tue`, `Wen`, `Thu`, `Fri`,
+  `Sat`, `Sun`];
+
+let date = myDate.getDate();
+let month = myDate.getMonth();
+let year = myDate.getFullYear();
+let dayOfWeek
 
 
 
