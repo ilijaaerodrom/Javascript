@@ -163,7 +163,7 @@ console.log(todoText);
 const todoCompleted = todos.filter(function (todo) {
   return todo.isCompleted === true;
 })
-console.log(todoCompleted); */
+console.log(todoCompleted);
 
 
 // Conditionals
@@ -182,3 +182,77 @@ const color = a > 10 ? `red` : `blue`;
 console.log(color);
 
 // Switch
+
+const a = 10;
+
+const color = a > 10 ? `red` : `blue`;
+
+switch (color) {
+  case `red`:
+    console.log(`color is red`);
+    break;
+  case `blue`:
+    console.log(`color is blue`);
+    break;
+  default:
+    console.log(`color is not red or blue`);
+    break;
+}
+
+// Functions
+
+function addNums(num1, num2) {
+  return num1 + num2
+}
+
+console.log(addNums(10, 10));
+
+const addNumbers = (number1, number2) => {
+  return number1 + number2
+}
+
+console.log(addNumbers(10, 10));
+
+
+// Contsractor function
+
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob);
+  this.getBirthYear = function () {
+    return this.dob.getFullYear();
+  }
+  this.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+// Instantiate object
+const person1 = new Person(`Jon`, `Doe`, `4-3-1986`);
+console.log(person1.getBirthYear());
+console.log(person1.getFullName());
+
+// Class
+
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+
+  getBirthYear() {
+    return this.dob.getFullYear();
+  }
+
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const person1 = new Person(`Jon`, `Doe`, `4-3-1986`);
+console.log(person1.getBirthYear());
+console.log(person1.getFullName()); */
+
+// DOM
