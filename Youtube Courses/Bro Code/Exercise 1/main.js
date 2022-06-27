@@ -1,4 +1,4 @@
-
+/*
 // A variable is a container for storing data
 // A variable behave as if it was the value that it containes
 
@@ -14,9 +14,9 @@ console.log(`Hello`, firstName);
 console.log(`You are`, myAge, `years old`);
 console.log(`Enrolled:`, student);
 
-document.getElementById(`p1`).innerHTML = `Hello ` + firstName;
-document.getElementById(`p2`).innerHTML = `You are ` + myAge + ` years old`;
-document.getElementById(`p3`).innerHTML = `Enrolled: ` + student;
+//document.getElementById(`p1`).innerHTML = `Hello ` + firstName;
+//document.getElementById(`p2`).innerHTML = `You are ` + myAge + ` years old`;
+//document.getElementById(`p3`).innerHTML = `Enrolled: ` + student;
 
 ///////////////////////////////////////////////////////////
 
@@ -26,7 +26,7 @@ document.getElementById(`p3`).innerHTML = `Enrolled: ` + student;
   operators (+ - * / %)
   that can be evaluated to a value
   ex. y = x + 5;
-*/
+
 
 let students = 20;
 //students += 1;
@@ -120,7 +120,7 @@ b = window.prompt(`Enter side B`);
 b = Number(b);
 
 c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-console.log(`Side c:`, c); */
+console.log(`Side c:`, c); 
 
 
 document.getElementById(`submitButton`).onclick = function() {
@@ -223,3 +223,120 @@ let letter = name.charAt(0).toUpperCase();
 console.log(letter);
 
 ////////////////////////////////////////////////////////////////////////
+
+// if statements = a basic form of decision making
+//                 if a condition is true, then do something
+//                 if not, then don't do it
+
+let yourAge = 12;
+
+if (yourAge >= 18) {
+  console.log(`You are an adult!`);
+}
+else if (yourAge < 0) {
+  console.log(`You haven't been born yet`);
+}
+else {
+  console.log(`Yuo are a child!`);
+}
+
+let online = false;
+
+if (online) {
+  console.log(`You are online!`);
+}
+else {
+  console.log(`You are offline!`);
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+// checked property
+
+document.getElementById("myButton").onclick = function() {
+
+  const myCheckBox = document.getElementById(`myCheckBox`);
+  const visaBtn = document.getElementById(`visaBtn`);
+  const mastercardBTN = document.getElementById(`mastercardBTN`);
+  const paypalBtn = document.getElementById(`paypalBtn`);
+
+  if (myCheckBox.checked) {
+    console.log(`You are subcrribed`);
+  } else {
+    console.log(`You are not subscribed`);
+  }
+
+  if (visaBtn.checked) {
+    console.log(`You are paying with Visa`);
+  }
+  else if (mastercardBTN) {
+    console.log(`You are paying with mastercard`);
+  }
+  else if (paypalBtn.checked) {
+    console.log(`You are paying with papypal`);
+  }
+  else {
+    console.log(`You must select a paymant type!`);
+  }
+};
+
+/////////////////////////////////////////////////////////////////////////
+
+// Switch = statement that examines a value
+//          for a match aganst many case clauses
+//          More efficient that many "if"
+
+
+let grade = `A`;
+
+switch (grade) {
+    case `A`:
+    console.log(`You did great!`);
+    break;
+    case `B`:
+    console.log(`You did good!`);
+    break;
+    case `C`:
+    console.log(`You did okey!`);
+    break;
+    case `D`:
+    console.log(`You passed ... barely!`);
+    break;
+    case `F`:
+    console.log(`You Failed!`);
+    break;
+
+  default:
+    console.log(grade, `Is not a letter grade`);
+} 
+*/
+let grade = `60`;
+
+switch (true) {
+    case grade >= 90:
+    console.log(`You did great!`);
+    break;
+    case grade >= 80:
+    console.log(`You did good!`);
+    break;
+    case grade >= 70:
+    console.log(`You did okey!`);
+    break;
+    case grade >= 60:
+    console.log(`You passed ... barely!`);
+    break;
+    case grade > 60:
+    console.log(`You Failed!`);
+    break;
+
+  default:
+    console.log(grade, `Is not a letter grade`);
+} 
+
+//////////////////////////////////////////////////////////////////////////
+
+// Gives us the ability to check more than 1 condition concurrently
+// && AND (Both conditions must be true)
+// || OR (Either condition can be true)
+
+
