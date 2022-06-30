@@ -309,29 +309,29 @@ switch (grade) {
   default:
     console.log(grade, `Is not a letter grade`);
 } 
-*/
+
 let grade = `60`;
 
 switch (true) {
-    case grade >= 90:
+  case grade >= 90:
     console.log(`You did great!`);
     break;
-    case grade >= 80:
+  case grade >= 80:
     console.log(`You did good!`);
     break;
-    case grade >= 70:
+  case grade >= 70:
     console.log(`You did okey!`);
     break;
-    case grade >= 60:
+  case grade >= 60:
     console.log(`You passed ... barely!`);
     break;
-    case grade > 60:
+  case grade > 60:
     console.log(`You Failed!`);
     break;
 
   default:
     console.log(grade, `Is not a letter grade`);
-} 
+}
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -339,4 +339,68 @@ switch (true) {
 // && AND (Both conditions must be true)
 // || OR (Either condition can be true)
 
+let temp = 15;
+let sunny = true;
 
+if (temp > 0 && temp < 30 && sunny) {
+  console.log(`The weather is good`);
+} else {
+  console.log(`The weather is bad`);
+}
+*/
+//////////////////////////////////////////////////////////////
+
+// ! Not logical operator
+// typically used to reversse a conditions boolean value
+// true -> false false -> true
+
+let temp = 15;
+
+if (!(temp > 0)) {
+  console.log(`It's cold outside`);
+} else {
+  console.log(`It's warn outside`);
+}
+
+////////////////////////////////////////////////////////////
+
+// While loop = repeat some code
+//              while some condition is true
+//              potentially infinite
+
+let userName = ``;
+
+while (userName === `` || userName === null) {
+  userName = window.prompt(`Enter your name:`);
+}
+
+console.log(`Hello`, userName);
+
+////////////////////////////////////////////////////////////
+
+// For loop = repeat some code a 
+//            certain amount of times
+
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+
+console.log(`Happy New Year`);
+
+/////////////////////////////////////////////////////////////
+
+// break = breaks out of a liip entirely
+// contonue = skip an iteration of a loop
+
+for (let i = 1; i <= 20; i++) {
+  if (i === 13) {
+    //break;
+    continue;
+  }
+  console.log(i);
+
+}
+
+/////////////////////////////////////////////////////////////
+
+// Nested loops = a loop inside of another loop
