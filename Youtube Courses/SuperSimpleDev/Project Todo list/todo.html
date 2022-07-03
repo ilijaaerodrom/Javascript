@@ -10,23 +10,35 @@
   <input id="todo-title" type="text">
   <button onclick="addTodo()">Add Todo</button>
   
+  <div id="todo-list"></div>
+
   <script>
     
     let todos = [`Get groceries`,`Wash car`,`Make dinner`];
-
-    todos.forEach(function (todoTitle) {
-      element = document.createElement(`div`);
-      element.innerText = todoTitle;
-      document.body.appendChild(element);
-    });
     
+    render();
+
     function addTodo() {
       let textBox = document.getElementById(`todo-title`);
       let title = textBox.value;
       todos.push(title);
-      
+ 
+      render();
     }
-    // do 43 min
+    
+
+    function render() {
+      // reset out list
+      document.getElementById(`todo-List`).innerHTML = ``;
+      todos.forEach(function (todoTitle) {
+      element = document.createElement(`div`);
+      element.innerText = todoTitle;
+      let todoList = document.getElementById(`todo-List`);
+      todoList.appendChild(element);
+    });
+    }
+    render();
+  // do 46 min
   </script>
 </body>
 </html>
